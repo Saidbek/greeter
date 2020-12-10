@@ -4,14 +4,20 @@
   </head>
 <body>
 
-<h1>Fill Out This Form</h1>
+<h2>Fill Out This Form</h2>
 
 <form action="/hello" method="POST">
-  A Greeting: <input type="text" name="greeting">
-  <br/>
-  Your Name: <input type="text" name="name">
-  <br/>
-  <input type="submit">
+  <div class="form-group">
+    <label for="greeting">Greeting</label>
+    <input type="text" name="greeting" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="greeting">Name</label>
+    <input type="text" name="name" class="form-control">
+  </div>
+
+  <input type="submit" class="btn btn-success" value="Submit">
 </form>
 
 </body>
