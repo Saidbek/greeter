@@ -1,6 +1,6 @@
 require 'sinatra'
 
-set :port, 4567
+set :port, 3000
 set :static, true
 set :public_folder, 'static'
 set :views, 'views'
