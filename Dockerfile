@@ -9,7 +9,9 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
-RUN bundle install --without development test
+
+RUN bundle config set without 'development test' \
+	&& bundle install
 
 ADD . $APP_HOME
 
