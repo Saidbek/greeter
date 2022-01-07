@@ -12,4 +12,5 @@ kubectl get all
 ...
 ..
 ..
+.
 ```
